@@ -1,34 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <base target="_blank" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="Ping Logo" />
+        </div>
+        <h1 class="header__intro">
+          We are launching <span class="header__special">soon!</span>
+        </h1>
+        <h2 class="header__detail">Subscribe and get notified</h2>
+      </header>
+      <form target="_self" class="form" id="form" novalidate>
+        <label class="sr-only" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="form__control form__input"
+          placeholder="Your email address..."
+          autocomplete="off"
+        />
+        <p id="email-msg" class="form__msg">Email Message</p>
+        <input
+          type="submit"
+          class="form__control form__submit"
+          value="Notify Me"
+        />
+      </form>
+      <div class="illustration">
+        <img
+          class="illustration__img"
+          src="./images/illustration-dashboard.png"
+          alt="Dashboard Illustration"
+        />
+      </div>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="https://www.facebook.com" class="socials__link"
+              ><i class="socials__icon fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.twitter.com" class="socials__link"
+              ><i class="socials__icon fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.instagram.com" class="socials__link"
+              ><i class="socials__icon fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
+    </main>
+    <footer class="attribution">
+      <p class="attribution__section">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p class="attribution__section">
+        Coded by
+        <a href="https://twitter.com/santu69" rel="noopener noreferrer"
+          >Shiva Santosh Jana</a
+        >.
+      </p>
+    </footer>
+    <script src="./validator.min.js"></script>
+    <script src="./script.js"></scriptsrc>
+  </body>
 </html>

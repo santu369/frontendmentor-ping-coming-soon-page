@@ -1,0 +1,26 @@
+{
+  "name": "frontendmentor-ping-coming-soon-page",
+  "version": "1.0.0",
+  "description": "Frontendmentor Ping Coming Soon Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santu369/frontendmentor-ping-coming-soon-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santu369/frontendmentor-ping-coming-soon-page/issues"
+  },
+  "homepage": "https://github.com/santu369/frontendmentor-ping-coming-soon-page#readme",
+  "dependencies": {
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.13"
+  }
+}
